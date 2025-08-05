@@ -1,0 +1,9 @@
+Class: planet
+Description: Planets - celestial bodies orbiting stars, not massive enough for fusion
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- planet_sample_1.png
+- planet_sample_2.png
+- planet_sample_3.png

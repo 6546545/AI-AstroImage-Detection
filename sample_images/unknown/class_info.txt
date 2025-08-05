@@ -1,0 +1,9 @@
+Class: unknown
+Description: Unknown objects - unidentified astronomical phenomena
+Number of sample images: 3
+Total images in test dataset: 10
+
+Sample images:
+- unknown_sample_1.png
+- unknown_sample_2.png
+- unknown_sample_3.png

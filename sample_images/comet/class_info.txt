@@ -1,0 +1,9 @@
+Class: comet
+Description: Comets - icy bodies with tails, originating from outer solar system
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- comet_sample_1.png
+- comet_sample_2.png
+- comet_sample_3.png

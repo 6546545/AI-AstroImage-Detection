@@ -1,0 +1,9 @@
+Class: pulsar
+Description: Pulsars - rotating neutron stars emitting regular pulses of radiation
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- pulsar_sample_1.png
+- pulsar_sample_2.png
+- pulsar_sample_3.png

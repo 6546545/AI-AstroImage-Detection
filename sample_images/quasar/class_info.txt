@@ -1,0 +1,9 @@
+Class: quasar
+Description: Quasars - extremely luminous active galactic nuclei powered by black holes
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- quasar_sample_1.png
+- quasar_sample_2.png
+- quasar_sample_3.png

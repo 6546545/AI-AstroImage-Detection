@@ -1,0 +1,2739 @@
+{
+  "total_samples": 190,
+  "classes": {
+    "star": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "star_normal_000.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_000.png"
+        },
+        {
+          "filename": "star_normal_001.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_001.png"
+        },
+        {
+          "filename": "star_normal_002.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_002.png"
+        },
+        {
+          "filename": "star_normal_003.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_003.png"
+        },
+        {
+          "filename": "star_normal_004.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_004.png"
+        },
+        {
+          "filename": "star_normal_005.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_005.png"
+        },
+        {
+          "filename": "star_normal_006.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_006.png"
+        },
+        {
+          "filename": "star_normal_007.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_007.png"
+        },
+        {
+          "filename": "star_normal_008.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_008.png"
+        },
+        {
+          "filename": "star_normal_009.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_009.png"
+        },
+        {
+          "filename": "star_normal_010.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_010.png"
+        },
+        {
+          "filename": "star_normal_011.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_011.png"
+        },
+        {
+          "filename": "star_normal_012.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_012.png"
+        },
+        {
+          "filename": "star_normal_013.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_013.png"
+        },
+        {
+          "filename": "star_normal_014.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_014.png"
+        },
+        {
+          "filename": "star_normal_015.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/star_normal_015.png"
+        },
+        {
+          "filename": "star_anomalous_000.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/star_anomalous_000.png"
+        },
+        {
+          "filename": "star_anomalous_001.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/star_anomalous_001.png"
+        },
+        {
+          "filename": "star_anomalous_002.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/star_anomalous_002.png"
+        },
+        {
+          "filename": "star_anomalous_003.png",
+          "class": "star",
+          "class_id": 0,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/star_anomalous_003.png"
+        }
+      ]
+    },
+    "galaxy": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "galaxy_normal_000.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_000.png"
+        },
+        {
+          "filename": "galaxy_normal_001.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_001.png"
+        },
+        {
+          "filename": "galaxy_normal_002.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_002.png"
+        },
+        {
+          "filename": "galaxy_normal_003.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_003.png"
+        },
+        {
+          "filename": "galaxy_normal_004.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_004.png"
+        },
+        {
+          "filename": "galaxy_normal_005.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_005.png"
+        },
+        {
+          "filename": "galaxy_normal_006.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_006.png"
+        },
+        {
+          "filename": "galaxy_normal_007.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_007.png"
+        },
+        {
+          "filename": "galaxy_normal_008.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_008.png"
+        },
+        {
+          "filename": "galaxy_normal_009.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_009.png"
+        },
+        {
+          "filename": "galaxy_normal_010.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_010.png"
+        },
+        {
+          "filename": "galaxy_normal_011.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_011.png"
+        },
+        {
+          "filename": "galaxy_normal_012.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_012.png"
+        },
+        {
+          "filename": "galaxy_normal_013.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_013.png"
+        },
+        {
+          "filename": "galaxy_normal_014.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_014.png"
+        },
+        {
+          "filename": "galaxy_normal_015.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/galaxy_normal_015.png"
+        },
+        {
+          "filename": "galaxy_anomalous_000.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/galaxy_anomalous_000.png"
+        },
+        {
+          "filename": "galaxy_anomalous_001.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/galaxy_anomalous_001.png"
+        },
+        {
+          "filename": "galaxy_anomalous_002.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/galaxy_anomalous_002.png"
+        },
+        {
+          "filename": "galaxy_anomalous_003.png",
+          "class": "galaxy",
+          "class_id": 1,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/galaxy_anomalous_003.png"
+        }
+      ]
+    },
+    "nebula": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "nebula_normal_000.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_000.png"
+        },
+        {
+          "filename": "nebula_normal_001.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_001.png"
+        },
+        {
+          "filename": "nebula_normal_002.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_002.png"
+        },
+        {
+          "filename": "nebula_normal_003.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_003.png"
+        },
+        {
+          "filename": "nebula_normal_004.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_004.png"
+        },
+        {
+          "filename": "nebula_normal_005.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_005.png"
+        },
+        {
+          "filename": "nebula_normal_006.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_006.png"
+        },
+        {
+          "filename": "nebula_normal_007.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_007.png"
+        },
+        {
+          "filename": "nebula_normal_008.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_008.png"
+        },
+        {
+          "filename": "nebula_normal_009.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_009.png"
+        },
+        {
+          "filename": "nebula_normal_010.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_010.png"
+        },
+        {
+          "filename": "nebula_normal_011.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_011.png"
+        },
+        {
+          "filename": "nebula_normal_012.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_012.png"
+        },
+        {
+          "filename": "nebula_normal_013.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_013.png"
+        },
+        {
+          "filename": "nebula_normal_014.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_014.png"
+        },
+        {
+          "filename": "nebula_normal_015.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/nebula_normal_015.png"
+        },
+        {
+          "filename": "nebula_anomalous_000.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/nebula_anomalous_000.png"
+        },
+        {
+          "filename": "nebula_anomalous_001.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/nebula_anomalous_001.png"
+        },
+        {
+          "filename": "nebula_anomalous_002.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/nebula_anomalous_002.png"
+        },
+        {
+          "filename": "nebula_anomalous_003.png",
+          "class": "nebula",
+          "class_id": 2,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/nebula_anomalous_003.png"
+        }
+      ]
+    },
+    "planet": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "planet_normal_000.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_000.png"
+        },
+        {
+          "filename": "planet_normal_001.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_001.png"
+        },
+        {
+          "filename": "planet_normal_002.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_002.png"
+        },
+        {
+          "filename": "planet_normal_003.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_003.png"
+        },
+        {
+          "filename": "planet_normal_004.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_004.png"
+        },
+        {
+          "filename": "planet_normal_005.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_005.png"
+        },
+        {
+          "filename": "planet_normal_006.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_006.png"
+        },
+        {
+          "filename": "planet_normal_007.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_007.png"
+        },
+        {
+          "filename": "planet_normal_008.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_008.png"
+        },
+        {
+          "filename": "planet_normal_009.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_009.png"
+        },
+        {
+          "filename": "planet_normal_010.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_010.png"
+        },
+        {
+          "filename": "planet_normal_011.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_011.png"
+        },
+        {
+          "filename": "planet_normal_012.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_012.png"
+        },
+        {
+          "filename": "planet_normal_013.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_013.png"
+        },
+        {
+          "filename": "planet_normal_014.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_014.png"
+        },
+        {
+          "filename": "planet_normal_015.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/planet_normal_015.png"
+        },
+        {
+          "filename": "planet_anomalous_000.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/planet_anomalous_000.png"
+        },
+        {
+          "filename": "planet_anomalous_001.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/planet_anomalous_001.png"
+        },
+        {
+          "filename": "planet_anomalous_002.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/planet_anomalous_002.png"
+        },
+        {
+          "filename": "planet_anomalous_003.png",
+          "class": "planet",
+          "class_id": 3,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/planet_anomalous_003.png"
+        }
+      ]
+    },
+    "asteroid": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "asteroid_normal_000.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_000.png"
+        },
+        {
+          "filename": "asteroid_normal_001.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_001.png"
+        },
+        {
+          "filename": "asteroid_normal_002.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_002.png"
+        },
+        {
+          "filename": "asteroid_normal_003.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_003.png"
+        },
+        {
+          "filename": "asteroid_normal_004.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_004.png"
+        },
+        {
+          "filename": "asteroid_normal_005.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_005.png"
+        },
+        {
+          "filename": "asteroid_normal_006.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_006.png"
+        },
+        {
+          "filename": "asteroid_normal_007.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_007.png"
+        },
+        {
+          "filename": "asteroid_normal_008.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_008.png"
+        },
+        {
+          "filename": "asteroid_normal_009.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_009.png"
+        },
+        {
+          "filename": "asteroid_normal_010.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_010.png"
+        },
+        {
+          "filename": "asteroid_normal_011.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_011.png"
+        },
+        {
+          "filename": "asteroid_normal_012.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_012.png"
+        },
+        {
+          "filename": "asteroid_normal_013.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_013.png"
+        },
+        {
+          "filename": "asteroid_normal_014.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_014.png"
+        },
+        {
+          "filename": "asteroid_normal_015.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/asteroid_normal_015.png"
+        },
+        {
+          "filename": "asteroid_anomalous_000.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/asteroid_anomalous_000.png"
+        },
+        {
+          "filename": "asteroid_anomalous_001.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/asteroid_anomalous_001.png"
+        },
+        {
+          "filename": "asteroid_anomalous_002.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/asteroid_anomalous_002.png"
+        },
+        {
+          "filename": "asteroid_anomalous_003.png",
+          "class": "asteroid",
+          "class_id": 4,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/asteroid_anomalous_003.png"
+        }
+      ]
+    },
+    "comet": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "comet_normal_000.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_000.png"
+        },
+        {
+          "filename": "comet_normal_001.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_001.png"
+        },
+        {
+          "filename": "comet_normal_002.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_002.png"
+        },
+        {
+          "filename": "comet_normal_003.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_003.png"
+        },
+        {
+          "filename": "comet_normal_004.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_004.png"
+        },
+        {
+          "filename": "comet_normal_005.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_005.png"
+        },
+        {
+          "filename": "comet_normal_006.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_006.png"
+        },
+        {
+          "filename": "comet_normal_007.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_007.png"
+        },
+        {
+          "filename": "comet_normal_008.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_008.png"
+        },
+        {
+          "filename": "comet_normal_009.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_009.png"
+        },
+        {
+          "filename": "comet_normal_010.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_010.png"
+        },
+        {
+          "filename": "comet_normal_011.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_011.png"
+        },
+        {
+          "filename": "comet_normal_012.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_012.png"
+        },
+        {
+          "filename": "comet_normal_013.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_013.png"
+        },
+        {
+          "filename": "comet_normal_014.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_014.png"
+        },
+        {
+          "filename": "comet_normal_015.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/comet_normal_015.png"
+        },
+        {
+          "filename": "comet_anomalous_000.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/comet_anomalous_000.png"
+        },
+        {
+          "filename": "comet_anomalous_001.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/comet_anomalous_001.png"
+        },
+        {
+          "filename": "comet_anomalous_002.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/comet_anomalous_002.png"
+        },
+        {
+          "filename": "comet_anomalous_003.png",
+          "class": "comet",
+          "class_id": 5,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/comet_anomalous_003.png"
+        }
+      ]
+    },
+    "quasar": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "quasar_normal_000.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_000.png"
+        },
+        {
+          "filename": "quasar_normal_001.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_001.png"
+        },
+        {
+          "filename": "quasar_normal_002.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_002.png"
+        },
+        {
+          "filename": "quasar_normal_003.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_003.png"
+        },
+        {
+          "filename": "quasar_normal_004.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_004.png"
+        },
+        {
+          "filename": "quasar_normal_005.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_005.png"
+        },
+        {
+          "filename": "quasar_normal_006.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_006.png"
+        },
+        {
+          "filename": "quasar_normal_007.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_007.png"
+        },
+        {
+          "filename": "quasar_normal_008.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_008.png"
+        },
+        {
+          "filename": "quasar_normal_009.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_009.png"
+        },
+        {
+          "filename": "quasar_normal_010.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_010.png"
+        },
+        {
+          "filename": "quasar_normal_011.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_011.png"
+        },
+        {
+          "filename": "quasar_normal_012.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_012.png"
+        },
+        {
+          "filename": "quasar_normal_013.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_013.png"
+        },
+        {
+          "filename": "quasar_normal_014.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_014.png"
+        },
+        {
+          "filename": "quasar_normal_015.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/quasar_normal_015.png"
+        },
+        {
+          "filename": "quasar_anomalous_000.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/quasar_anomalous_000.png"
+        },
+        {
+          "filename": "quasar_anomalous_001.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/quasar_anomalous_001.png"
+        },
+        {
+          "filename": "quasar_anomalous_002.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/quasar_anomalous_002.png"
+        },
+        {
+          "filename": "quasar_anomalous_003.png",
+          "class": "quasar",
+          "class_id": 6,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/quasar_anomalous_003.png"
+        }
+      ]
+    },
+    "pulsar": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "pulsar_normal_000.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_000.png"
+        },
+        {
+          "filename": "pulsar_normal_001.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_001.png"
+        },
+        {
+          "filename": "pulsar_normal_002.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_002.png"
+        },
+        {
+          "filename": "pulsar_normal_003.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_003.png"
+        },
+        {
+          "filename": "pulsar_normal_004.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_004.png"
+        },
+        {
+          "filename": "pulsar_normal_005.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_005.png"
+        },
+        {
+          "filename": "pulsar_normal_006.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_006.png"
+        },
+        {
+          "filename": "pulsar_normal_007.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_007.png"
+        },
+        {
+          "filename": "pulsar_normal_008.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_008.png"
+        },
+        {
+          "filename": "pulsar_normal_009.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_009.png"
+        },
+        {
+          "filename": "pulsar_normal_010.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_010.png"
+        },
+        {
+          "filename": "pulsar_normal_011.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_011.png"
+        },
+        {
+          "filename": "pulsar_normal_012.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_012.png"
+        },
+        {
+          "filename": "pulsar_normal_013.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_013.png"
+        },
+        {
+          "filename": "pulsar_normal_014.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_014.png"
+        },
+        {
+          "filename": "pulsar_normal_015.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/pulsar_normal_015.png"
+        },
+        {
+          "filename": "pulsar_anomalous_000.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/pulsar_anomalous_000.png"
+        },
+        {
+          "filename": "pulsar_anomalous_001.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/pulsar_anomalous_001.png"
+        },
+        {
+          "filename": "pulsar_anomalous_002.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/pulsar_anomalous_002.png"
+        },
+        {
+          "filename": "pulsar_anomalous_003.png",
+          "class": "pulsar",
+          "class_id": 7,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/pulsar_anomalous_003.png"
+        }
+      ]
+    },
+    "black_hole": {
+      "total": 20,
+      "normal": 16,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "black_hole_normal_000.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_000.png"
+        },
+        {
+          "filename": "black_hole_normal_001.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_001.png"
+        },
+        {
+          "filename": "black_hole_normal_002.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_002.png"
+        },
+        {
+          "filename": "black_hole_normal_003.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_003.png"
+        },
+        {
+          "filename": "black_hole_normal_004.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_004.png"
+        },
+        {
+          "filename": "black_hole_normal_005.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_005.png"
+        },
+        {
+          "filename": "black_hole_normal_006.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_006.png"
+        },
+        {
+          "filename": "black_hole_normal_007.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_007.png"
+        },
+        {
+          "filename": "black_hole_normal_008.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_008.png"
+        },
+        {
+          "filename": "black_hole_normal_009.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_009.png"
+        },
+        {
+          "filename": "black_hole_normal_010.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_010.png"
+        },
+        {
+          "filename": "black_hole_normal_011.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_011.png"
+        },
+        {
+          "filename": "black_hole_normal_012.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_012.png"
+        },
+        {
+          "filename": "black_hole_normal_013.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_013.png"
+        },
+        {
+          "filename": "black_hole_normal_014.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_014.png"
+        },
+        {
+          "filename": "black_hole_normal_015.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/black_hole_normal_015.png"
+        },
+        {
+          "filename": "black_hole_anomalous_000.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/black_hole_anomalous_000.png"
+        },
+        {
+          "filename": "black_hole_anomalous_001.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/black_hole_anomalous_001.png"
+        },
+        {
+          "filename": "black_hole_anomalous_002.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/black_hole_anomalous_002.png"
+        },
+        {
+          "filename": "black_hole_anomalous_003.png",
+          "class": "black_hole",
+          "class_id": 8,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/black_hole_anomalous_003.png"
+        }
+      ]
+    },
+    "unknown": {
+      "total": 10,
+      "normal": 6,
+      "anomalous": 4,
+      "samples": [
+        {
+          "filename": "unknown_000.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/unknown_000.png"
+        },
+        {
+          "filename": "unknown_001.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/unknown_001.png"
+        },
+        {
+          "filename": "unknown_002.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/unknown_002.png"
+        },
+        {
+          "filename": "unknown_003.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/unknown_003.png"
+        },
+        {
+          "filename": "unknown_004.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/unknown_004.png"
+        },
+        {
+          "filename": "unknown_005.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/unknown_005.png"
+        },
+        {
+          "filename": "unknown_006.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/unknown_006.png"
+        },
+        {
+          "filename": "unknown_007.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/unknown_007.png"
+        },
+        {
+          "filename": "unknown_008.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": true,
+          "filepath": "test_dataset/images/unknown_008.png"
+        },
+        {
+          "filename": "unknown_009.png",
+          "class": "unknown",
+          "class_id": 9,
+          "is_anomalous": false,
+          "filepath": "test_dataset/images/unknown_009.png"
+        }
+      ]
+    }
+  },
+  "anomalous_samples": 40,
+  "normal_samples": 150,
+  "images": [
+    {
+      "filename": "star_normal_000.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_000.png"
+    },
+    {
+      "filename": "star_normal_001.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_001.png"
+    },
+    {
+      "filename": "star_normal_002.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_002.png"
+    },
+    {
+      "filename": "star_normal_003.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_003.png"
+    },
+    {
+      "filename": "star_normal_004.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_004.png"
+    },
+    {
+      "filename": "star_normal_005.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_005.png"
+    },
+    {
+      "filename": "star_normal_006.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_006.png"
+    },
+    {
+      "filename": "star_normal_007.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_007.png"
+    },
+    {
+      "filename": "star_normal_008.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_008.png"
+    },
+    {
+      "filename": "star_normal_009.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_009.png"
+    },
+    {
+      "filename": "star_normal_010.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_010.png"
+    },
+    {
+      "filename": "star_normal_011.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_011.png"
+    },
+    {
+      "filename": "star_normal_012.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_012.png"
+    },
+    {
+      "filename": "star_normal_013.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_013.png"
+    },
+    {
+      "filename": "star_normal_014.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_014.png"
+    },
+    {
+      "filename": "star_normal_015.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/star_normal_015.png"
+    },
+    {
+      "filename": "star_anomalous_000.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/star_anomalous_000.png"
+    },
+    {
+      "filename": "star_anomalous_001.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/star_anomalous_001.png"
+    },
+    {
+      "filename": "star_anomalous_002.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/star_anomalous_002.png"
+    },
+    {
+      "filename": "star_anomalous_003.png",
+      "class": "star",
+      "class_id": 0,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/star_anomalous_003.png"
+    },
+    {
+      "filename": "galaxy_normal_000.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_000.png"
+    },
+    {
+      "filename": "galaxy_normal_001.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_001.png"
+    },
+    {
+      "filename": "galaxy_normal_002.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_002.png"
+    },
+    {
+      "filename": "galaxy_normal_003.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_003.png"
+    },
+    {
+      "filename": "galaxy_normal_004.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_004.png"
+    },
+    {
+      "filename": "galaxy_normal_005.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_005.png"
+    },
+    {
+      "filename": "galaxy_normal_006.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_006.png"
+    },
+    {
+      "filename": "galaxy_normal_007.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_007.png"
+    },
+    {
+      "filename": "galaxy_normal_008.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_008.png"
+    },
+    {
+      "filename": "galaxy_normal_009.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_009.png"
+    },
+    {
+      "filename": "galaxy_normal_010.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_010.png"
+    },
+    {
+      "filename": "galaxy_normal_011.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_011.png"
+    },
+    {
+      "filename": "galaxy_normal_012.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_012.png"
+    },
+    {
+      "filename": "galaxy_normal_013.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_013.png"
+    },
+    {
+      "filename": "galaxy_normal_014.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_014.png"
+    },
+    {
+      "filename": "galaxy_normal_015.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/galaxy_normal_015.png"
+    },
+    {
+      "filename": "galaxy_anomalous_000.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/galaxy_anomalous_000.png"
+    },
+    {
+      "filename": "galaxy_anomalous_001.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/galaxy_anomalous_001.png"
+    },
+    {
+      "filename": "galaxy_anomalous_002.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/galaxy_anomalous_002.png"
+    },
+    {
+      "filename": "galaxy_anomalous_003.png",
+      "class": "galaxy",
+      "class_id": 1,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/galaxy_anomalous_003.png"
+    },
+    {
+      "filename": "nebula_normal_000.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_000.png"
+    },
+    {
+      "filename": "nebula_normal_001.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_001.png"
+    },
+    {
+      "filename": "nebula_normal_002.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_002.png"
+    },
+    {
+      "filename": "nebula_normal_003.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_003.png"
+    },
+    {
+      "filename": "nebula_normal_004.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_004.png"
+    },
+    {
+      "filename": "nebula_normal_005.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_005.png"
+    },
+    {
+      "filename": "nebula_normal_006.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_006.png"
+    },
+    {
+      "filename": "nebula_normal_007.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_007.png"
+    },
+    {
+      "filename": "nebula_normal_008.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_008.png"
+    },
+    {
+      "filename": "nebula_normal_009.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_009.png"
+    },
+    {
+      "filename": "nebula_normal_010.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_010.png"
+    },
+    {
+      "filename": "nebula_normal_011.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_011.png"
+    },
+    {
+      "filename": "nebula_normal_012.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_012.png"
+    },
+    {
+      "filename": "nebula_normal_013.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_013.png"
+    },
+    {
+      "filename": "nebula_normal_014.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_014.png"
+    },
+    {
+      "filename": "nebula_normal_015.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/nebula_normal_015.png"
+    },
+    {
+      "filename": "nebula_anomalous_000.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/nebula_anomalous_000.png"
+    },
+    {
+      "filename": "nebula_anomalous_001.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/nebula_anomalous_001.png"
+    },
+    {
+      "filename": "nebula_anomalous_002.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/nebula_anomalous_002.png"
+    },
+    {
+      "filename": "nebula_anomalous_003.png",
+      "class": "nebula",
+      "class_id": 2,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/nebula_anomalous_003.png"
+    },
+    {
+      "filename": "planet_normal_000.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_000.png"
+    },
+    {
+      "filename": "planet_normal_001.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_001.png"
+    },
+    {
+      "filename": "planet_normal_002.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_002.png"
+    },
+    {
+      "filename": "planet_normal_003.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_003.png"
+    },
+    {
+      "filename": "planet_normal_004.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_004.png"
+    },
+    {
+      "filename": "planet_normal_005.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_005.png"
+    },
+    {
+      "filename": "planet_normal_006.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_006.png"
+    },
+    {
+      "filename": "planet_normal_007.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_007.png"
+    },
+    {
+      "filename": "planet_normal_008.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_008.png"
+    },
+    {
+      "filename": "planet_normal_009.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_009.png"
+    },
+    {
+      "filename": "planet_normal_010.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_010.png"
+    },
+    {
+      "filename": "planet_normal_011.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_011.png"
+    },
+    {
+      "filename": "planet_normal_012.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_012.png"
+    },
+    {
+      "filename": "planet_normal_013.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_013.png"
+    },
+    {
+      "filename": "planet_normal_014.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_014.png"
+    },
+    {
+      "filename": "planet_normal_015.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/planet_normal_015.png"
+    },
+    {
+      "filename": "planet_anomalous_000.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/planet_anomalous_000.png"
+    },
+    {
+      "filename": "planet_anomalous_001.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/planet_anomalous_001.png"
+    },
+    {
+      "filename": "planet_anomalous_002.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/planet_anomalous_002.png"
+    },
+    {
+      "filename": "planet_anomalous_003.png",
+      "class": "planet",
+      "class_id": 3,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/planet_anomalous_003.png"
+    },
+    {
+      "filename": "asteroid_normal_000.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_000.png"
+    },
+    {
+      "filename": "asteroid_normal_001.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_001.png"
+    },
+    {
+      "filename": "asteroid_normal_002.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_002.png"
+    },
+    {
+      "filename": "asteroid_normal_003.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_003.png"
+    },
+    {
+      "filename": "asteroid_normal_004.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_004.png"
+    },
+    {
+      "filename": "asteroid_normal_005.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_005.png"
+    },
+    {
+      "filename": "asteroid_normal_006.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_006.png"
+    },
+    {
+      "filename": "asteroid_normal_007.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_007.png"
+    },
+    {
+      "filename": "asteroid_normal_008.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_008.png"
+    },
+    {
+      "filename": "asteroid_normal_009.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_009.png"
+    },
+    {
+      "filename": "asteroid_normal_010.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_010.png"
+    },
+    {
+      "filename": "asteroid_normal_011.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_011.png"
+    },
+    {
+      "filename": "asteroid_normal_012.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_012.png"
+    },
+    {
+      "filename": "asteroid_normal_013.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_013.png"
+    },
+    {
+      "filename": "asteroid_normal_014.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_014.png"
+    },
+    {
+      "filename": "asteroid_normal_015.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/asteroid_normal_015.png"
+    },
+    {
+      "filename": "asteroid_anomalous_000.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/asteroid_anomalous_000.png"
+    },
+    {
+      "filename": "asteroid_anomalous_001.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/asteroid_anomalous_001.png"
+    },
+    {
+      "filename": "asteroid_anomalous_002.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/asteroid_anomalous_002.png"
+    },
+    {
+      "filename": "asteroid_anomalous_003.png",
+      "class": "asteroid",
+      "class_id": 4,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/asteroid_anomalous_003.png"
+    },
+    {
+      "filename": "comet_normal_000.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_000.png"
+    },
+    {
+      "filename": "comet_normal_001.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_001.png"
+    },
+    {
+      "filename": "comet_normal_002.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_002.png"
+    },
+    {
+      "filename": "comet_normal_003.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_003.png"
+    },
+    {
+      "filename": "comet_normal_004.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_004.png"
+    },
+    {
+      "filename": "comet_normal_005.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_005.png"
+    },
+    {
+      "filename": "comet_normal_006.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_006.png"
+    },
+    {
+      "filename": "comet_normal_007.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_007.png"
+    },
+    {
+      "filename": "comet_normal_008.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_008.png"
+    },
+    {
+      "filename": "comet_normal_009.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_009.png"
+    },
+    {
+      "filename": "comet_normal_010.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_010.png"
+    },
+    {
+      "filename": "comet_normal_011.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_011.png"
+    },
+    {
+      "filename": "comet_normal_012.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_012.png"
+    },
+    {
+      "filename": "comet_normal_013.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_013.png"
+    },
+    {
+      "filename": "comet_normal_014.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_014.png"
+    },
+    {
+      "filename": "comet_normal_015.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/comet_normal_015.png"
+    },
+    {
+      "filename": "comet_anomalous_000.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/comet_anomalous_000.png"
+    },
+    {
+      "filename": "comet_anomalous_001.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/comet_anomalous_001.png"
+    },
+    {
+      "filename": "comet_anomalous_002.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/comet_anomalous_002.png"
+    },
+    {
+      "filename": "comet_anomalous_003.png",
+      "class": "comet",
+      "class_id": 5,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/comet_anomalous_003.png"
+    },
+    {
+      "filename": "quasar_normal_000.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_000.png"
+    },
+    {
+      "filename": "quasar_normal_001.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_001.png"
+    },
+    {
+      "filename": "quasar_normal_002.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_002.png"
+    },
+    {
+      "filename": "quasar_normal_003.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_003.png"
+    },
+    {
+      "filename": "quasar_normal_004.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_004.png"
+    },
+    {
+      "filename": "quasar_normal_005.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_005.png"
+    },
+    {
+      "filename": "quasar_normal_006.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_006.png"
+    },
+    {
+      "filename": "quasar_normal_007.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_007.png"
+    },
+    {
+      "filename": "quasar_normal_008.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_008.png"
+    },
+    {
+      "filename": "quasar_normal_009.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_009.png"
+    },
+    {
+      "filename": "quasar_normal_010.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_010.png"
+    },
+    {
+      "filename": "quasar_normal_011.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_011.png"
+    },
+    {
+      "filename": "quasar_normal_012.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_012.png"
+    },
+    {
+      "filename": "quasar_normal_013.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_013.png"
+    },
+    {
+      "filename": "quasar_normal_014.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_014.png"
+    },
+    {
+      "filename": "quasar_normal_015.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/quasar_normal_015.png"
+    },
+    {
+      "filename": "quasar_anomalous_000.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/quasar_anomalous_000.png"
+    },
+    {
+      "filename": "quasar_anomalous_001.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/quasar_anomalous_001.png"
+    },
+    {
+      "filename": "quasar_anomalous_002.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/quasar_anomalous_002.png"
+    },
+    {
+      "filename": "quasar_anomalous_003.png",
+      "class": "quasar",
+      "class_id": 6,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/quasar_anomalous_003.png"
+    },
+    {
+      "filename": "pulsar_normal_000.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_000.png"
+    },
+    {
+      "filename": "pulsar_normal_001.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_001.png"
+    },
+    {
+      "filename": "pulsar_normal_002.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_002.png"
+    },
+    {
+      "filename": "pulsar_normal_003.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_003.png"
+    },
+    {
+      "filename": "pulsar_normal_004.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_004.png"
+    },
+    {
+      "filename": "pulsar_normal_005.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_005.png"
+    },
+    {
+      "filename": "pulsar_normal_006.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_006.png"
+    },
+    {
+      "filename": "pulsar_normal_007.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_007.png"
+    },
+    {
+      "filename": "pulsar_normal_008.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_008.png"
+    },
+    {
+      "filename": "pulsar_normal_009.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_009.png"
+    },
+    {
+      "filename": "pulsar_normal_010.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_010.png"
+    },
+    {
+      "filename": "pulsar_normal_011.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_011.png"
+    },
+    {
+      "filename": "pulsar_normal_012.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_012.png"
+    },
+    {
+      "filename": "pulsar_normal_013.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_013.png"
+    },
+    {
+      "filename": "pulsar_normal_014.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_014.png"
+    },
+    {
+      "filename": "pulsar_normal_015.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/pulsar_normal_015.png"
+    },
+    {
+      "filename": "pulsar_anomalous_000.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/pulsar_anomalous_000.png"
+    },
+    {
+      "filename": "pulsar_anomalous_001.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/pulsar_anomalous_001.png"
+    },
+    {
+      "filename": "pulsar_anomalous_002.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/pulsar_anomalous_002.png"
+    },
+    {
+      "filename": "pulsar_anomalous_003.png",
+      "class": "pulsar",
+      "class_id": 7,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/pulsar_anomalous_003.png"
+    },
+    {
+      "filename": "black_hole_normal_000.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_000.png"
+    },
+    {
+      "filename": "black_hole_normal_001.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_001.png"
+    },
+    {
+      "filename": "black_hole_normal_002.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_002.png"
+    },
+    {
+      "filename": "black_hole_normal_003.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_003.png"
+    },
+    {
+      "filename": "black_hole_normal_004.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_004.png"
+    },
+    {
+      "filename": "black_hole_normal_005.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_005.png"
+    },
+    {
+      "filename": "black_hole_normal_006.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_006.png"
+    },
+    {
+      "filename": "black_hole_normal_007.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_007.png"
+    },
+    {
+      "filename": "black_hole_normal_008.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_008.png"
+    },
+    {
+      "filename": "black_hole_normal_009.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_009.png"
+    },
+    {
+      "filename": "black_hole_normal_010.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_010.png"
+    },
+    {
+      "filename": "black_hole_normal_011.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_011.png"
+    },
+    {
+      "filename": "black_hole_normal_012.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_012.png"
+    },
+    {
+      "filename": "black_hole_normal_013.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_013.png"
+    },
+    {
+      "filename": "black_hole_normal_014.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_014.png"
+    },
+    {
+      "filename": "black_hole_normal_015.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/black_hole_normal_015.png"
+    },
+    {
+      "filename": "black_hole_anomalous_000.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/black_hole_anomalous_000.png"
+    },
+    {
+      "filename": "black_hole_anomalous_001.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/black_hole_anomalous_001.png"
+    },
+    {
+      "filename": "black_hole_anomalous_002.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/black_hole_anomalous_002.png"
+    },
+    {
+      "filename": "black_hole_anomalous_003.png",
+      "class": "black_hole",
+      "class_id": 8,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/black_hole_anomalous_003.png"
+    },
+    {
+      "filename": "unknown_000.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/unknown_000.png"
+    },
+    {
+      "filename": "unknown_001.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/unknown_001.png"
+    },
+    {
+      "filename": "unknown_002.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/unknown_002.png"
+    },
+    {
+      "filename": "unknown_003.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/unknown_003.png"
+    },
+    {
+      "filename": "unknown_004.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/unknown_004.png"
+    },
+    {
+      "filename": "unknown_005.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/unknown_005.png"
+    },
+    {
+      "filename": "unknown_006.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/unknown_006.png"
+    },
+    {
+      "filename": "unknown_007.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/unknown_007.png"
+    },
+    {
+      "filename": "unknown_008.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": true,
+      "filepath": "test_dataset/images/unknown_008.png"
+    },
+    {
+      "filename": "unknown_009.png",
+      "class": "unknown",
+      "class_id": 9,
+      "is_anomalous": false,
+      "filepath": "test_dataset/images/unknown_009.png"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+Class: black
+Description: Unknown class
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- black_sample_1.png
+- black_sample_2.png
+- black_sample_3.png

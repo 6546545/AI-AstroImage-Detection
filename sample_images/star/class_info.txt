@@ -1,0 +1,9 @@
+Class: star
+Description: Stars - luminous spheres of plasma held together by gravity
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- star_sample_1.png
+- star_sample_2.png
+- star_sample_3.png

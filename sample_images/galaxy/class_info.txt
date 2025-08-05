@@ -1,0 +1,9 @@
+Class: galaxy
+Description: Galaxies - vast systems of stars, gas, and dust bound by gravity
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- galaxy_sample_1.png
+- galaxy_sample_2.png
+- galaxy_sample_3.png

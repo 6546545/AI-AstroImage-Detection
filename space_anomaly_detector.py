@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 import cv2
+import matplotlib
 import matplotlib.pyplot as plt
 from pathlib import Path
 import json
@@ -58,15 +59,43 @@ class DataPreprocessor:
         self.grayscale = grayscale
     
     def load_and_preprocess_images(self, folder: str) -> Tuple[np.ndarray, List[str]]:
-        """Load and preprocess images from a folder."""
+        """Load and preprocess images from a folder (supports nested subdirectories)."""
         images = []
         filenames = []
         flag = cv2.IMREAD_GRAYSCALE if self.grayscale else cv2.IMREAD_COLOR
         
         logger.info(f"Loading images from {folder}")
         
-        for file in os.listdir(folder):
-            if file.lower().endswith(('.jpg', '.jpeg', '.png')):
+        # Check if folder contains subdirectories (class-based organization)
+        subdirs = [d for d in os.listdir(folder) 
+                  if os.path.isdir(os.path.join(folder, d)) and not d.startswith('.')]
+        
+        if subdirs:
+            # Load from subdirectories (class-based organization)
+            logger.info(f"Found {len(subdirs)} subdirectories, loading from all classes")
+            for subdir in subdirs:
+                subdir_path = os.path.join(folder, subdir)
+                image_files = [f for f in os.listdir(subdir_path) 
+                              if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+                
+                for file in image_files:
+                    path = os.path.join(subdir_path, file)
+                    img = cv2.imread(path, flag)
+                    
+                    if img is None:
+                        logger.warning(f"Skipping unreadable file: {file}")
+                        continue
+                    
+                    img = cv2.resize(img, self.img_size)
+                    img = img / 255.0  # Normalize to [0, 1]
+                    images.append(img)
+                    filenames.append(f"{subdir}/{file}")
+        else:
+            # Load from flat directory
+            image_files = [f for f in os.listdir(folder) 
+                          if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+            
+            for file in image_files:
                 path = os.path.join(folder, file)
                 img = cv2.imread(path, flag)
                 
@@ -78,6 +107,21 @@ class DataPreprocessor:
                 img = img / 255.0  # Normalize to [0, 1]
                 images.append(img)
                 filenames.append(file)
+        
+        if not images:
+            logger.warning(f"No image files found in {folder}")
+            return np.array([]), []
+        
+        # Create progress bar for image loading
+        pbar = tqdm(images, desc="Loading and preprocessing images", unit="image")
+        
+        # Update progress bar
+        pbar.set_postfix({
+            'Loaded': len(images),
+            'Classes': len(set([f.split('/')[0] for f in filenames if '/' in f]))
+        })
+        
+        pbar.close()
         
         images = np.array(images)
         if self.grayscale and images.ndim == 3:
@@ -230,13 +274,30 @@ class AnomalyDetector:
         self.model.eval()
         test_tensor = torch.tensor(X_test.astype(np.float32))
         
+        # Create progress bar for anomaly detection
+        pbar = tqdm(total=len(X_test), desc="Detecting anomalies", unit="image")
+        
         with torch.no_grad():
-            reconstructions = self.model(test_tensor.to(self.device)).cpu().numpy()
+            # Process in batches for better progress tracking
+            batch_size = 32
+            reconstructions = []
+            
+            for i in range(0, len(X_test), batch_size):
+                batch = test_tensor[i:i+batch_size].to(self.device)
+                batch_reconstructions = self.model(batch).cpu().numpy()
+                reconstructions.append(batch_reconstructions)
+                pbar.update(len(batch))
+            
+            reconstructions = np.concatenate(reconstructions, axis=0)
+        
+        pbar.close()
         
         # Compute reconstruction errors
+        logger.info("Computing reconstruction errors...")
         errors = np.mean((X_test - reconstructions) ** 2, axis=(1, 2, 3))
         
         # Calculate confidence scores
+        logger.info("Calculating confidence scores...")
         confidences = self._calculate_confidence(errors)
         
         # Determine anomaly threshold
@@ -282,7 +343,10 @@ class AnomalyDetector:
         errors = results['errors']
         confidences = results['confidences']
         
-        for idx in anomalies:
+        # Create progress bar for export
+        pbar = tqdm(anomalies, desc="Exporting anomalies", unit="image")
+        
+        for idx in pbar:
             img = (X_test[idx][0] * 255).astype('uint8')
             error = errors[idx]
             confidence = confidences[idx]
@@ -298,15 +362,24 @@ class AnomalyDetector:
             
             cv2.imwrite(out_path, img)
             exported_files.append(out_path)
-            logger.info(f"Exported: {filename}")
+            
+            # Update progress bar
+            pbar.set_postfix({
+                'Exported': len(exported_files),
+                'Current': filename[:20] + '...' if len(filename) > 20 else filename
+            })
+        
+        pbar.close()
         
         # Save results metadata
         metadata_path = os.path.join(output_dir, "anomaly_results.json")
         with open(metadata_path, 'w') as f:
             json.dump(results, f, indent=2)
         
-        logger.info(f"Exported {len(exported_files)} anomaly images")
+        logger.info(f"Exported {len(exported_files)} anomaly images to {output_dir}")
         logger.info(f"Results metadata saved to: {metadata_path}")
+        
+        return exported_files
         
         return exported_files
     

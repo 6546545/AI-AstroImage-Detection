@@ -1,0 +1,57 @@
+SAMPLE ASTRONOMICAL IMAGES SUMMARY
+========================================
+
+Total classes: 10
+Total sample images: 30
+Images per class: 3
+
+ASTEROID:
+  Description: Asteroids - rocky objects in space, smaller than planets
+  Sample images: 3
+  Total in test dataset: 20
+
+GALAXY:
+  Description: Galaxies - vast systems of stars, gas, and dust bound by gravity
+  Sample images: 3
+  Total in test dataset: 20
+
+STAR:
+  Description: Stars - luminous spheres of plasma held together by gravity
+  Sample images: 3
+  Total in test dataset: 20
+
+BLACK:
+  Description: Unknown class
+  Sample images: 3
+  Total in test dataset: 20
+
+COMET:
+  Description: Comets - icy bodies with tails, originating from outer solar system
+  Sample images: 3
+  Total in test dataset: 20
+
+QUASAR:
+  Description: Quasars - extremely luminous active galactic nuclei powered by black holes
+  Sample images: 3
+  Total in test dataset: 20
+
+PULSAR:
+  Description: Pulsars - rotating neutron stars emitting regular pulses of radiation
+  Sample images: 3
+  Total in test dataset: 20
+
+UNKNOWN:
+  Description: Unknown objects - unidentified astronomical phenomena
+  Sample images: 3
+  Total in test dataset: 10
+
+PLANET:
+  Description: Planets - celestial bodies orbiting stars, not massive enough for fusion
+  Sample images: 3
+  Total in test dataset: 20
+
+NEBULA:
+  Description: Nebulae - clouds of gas and dust in space, often stellar nurseries
+  Sample images: 3
+  Total in test dataset: 20
+

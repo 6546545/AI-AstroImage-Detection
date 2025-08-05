@@ -1,0 +1,12 @@
+{
+  "star": 0,
+  "galaxy": 1,
+  "nebula": 2,
+  "planet": 3,
+  "asteroid": 4,
+  "comet": 5,
+  "quasar": 6,
+  "pulsar": 7,
+  "black_hole": 8,
+  "unknown": 9
+}

@@ -1,0 +1,9 @@
+Class: asteroid
+Description: Asteroids - rocky objects in space, smaller than planets
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- asteroid_sample_1.png
+- asteroid_sample_2.png
+- asteroid_sample_3.png

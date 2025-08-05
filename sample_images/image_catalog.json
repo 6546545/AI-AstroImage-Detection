@@ -1,0 +1,212 @@
+{
+  "asteroid": {
+    "description": "Asteroids - rocky objects in space, smaller than planets",
+    "images": [
+      {
+        "filename": "asteroid_sample_3.png",
+        "path": "sample_images/asteroid/asteroid_sample_3.png",
+        "size": 1170
+      },
+      {
+        "filename": "asteroid_sample_2.png",
+        "path": "sample_images/asteroid/asteroid_sample_2.png",
+        "size": 1168
+      },
+      {
+        "filename": "asteroid_sample_1.png",
+        "path": "sample_images/asteroid/asteroid_sample_1.png",
+        "size": 1179
+      }
+    ],
+    "info_file": "sample_images/asteroid/class_info.txt"
+  },
+  "planet": {
+    "description": "Planets - celestial bodies orbiting stars, not massive enough for fusion",
+    "images": [
+      {
+        "filename": "planet_sample_3.png",
+        "path": "sample_images/planet/planet_sample_3.png",
+        "size": 1213
+      },
+      {
+        "filename": "planet_sample_2.png",
+        "path": "sample_images/planet/planet_sample_2.png",
+        "size": 1257
+      },
+      {
+        "filename": "planet_sample_1.png",
+        "path": "sample_images/planet/planet_sample_1.png",
+        "size": 1234
+      }
+    ],
+    "info_file": "sample_images/planet/class_info.txt"
+  },
+  "nebula": {
+    "description": "Nebulae - clouds of gas and dust in space, often stellar nurseries",
+    "images": [
+      {
+        "filename": "nebula_sample_3.png",
+        "path": "sample_images/nebula/nebula_sample_3.png",
+        "size": 24350
+      },
+      {
+        "filename": "nebula_sample_2.png",
+        "path": "sample_images/nebula/nebula_sample_2.png",
+        "size": 6987
+      },
+      {
+        "filename": "nebula_sample_1.png",
+        "path": "sample_images/nebula/nebula_sample_1.png",
+        "size": 6042
+      }
+    ],
+    "info_file": "sample_images/nebula/class_info.txt"
+  },
+  "quasar": {
+    "description": "Quasars - extremely luminous active galactic nuclei powered by black holes",
+    "images": [
+      {
+        "filename": "quasar_sample_1.png",
+        "path": "sample_images/quasar/quasar_sample_1.png",
+        "size": 1543
+      },
+      {
+        "filename": "quasar_sample_3.png",
+        "path": "sample_images/quasar/quasar_sample_3.png",
+        "size": 1542
+      },
+      {
+        "filename": "quasar_sample_2.png",
+        "path": "sample_images/quasar/quasar_sample_2.png",
+        "size": 1535
+      }
+    ],
+    "info_file": "sample_images/quasar/class_info.txt"
+  },
+  "galaxy": {
+    "description": "Galaxies - vast systems of stars, gas, and dust bound by gravity",
+    "images": [
+      {
+        "filename": "galaxy_sample_3.png",
+        "path": "sample_images/galaxy/galaxy_sample_3.png",
+        "size": 1367
+      },
+      {
+        "filename": "galaxy_sample_2.png",
+        "path": "sample_images/galaxy/galaxy_sample_2.png",
+        "size": 1367
+      },
+      {
+        "filename": "galaxy_sample_1.png",
+        "path": "sample_images/galaxy/galaxy_sample_1.png",
+        "size": 1367
+      }
+    ],
+    "info_file": "sample_images/galaxy/class_info.txt"
+  },
+  "star": {
+    "description": "Stars - luminous spheres of plasma held together by gravity",
+    "images": [
+      {
+        "filename": "star_sample_1.png",
+        "path": "sample_images/star/star_sample_1.png",
+        "size": 1194
+      },
+      {
+        "filename": "star_sample_3.png",
+        "path": "sample_images/star/star_sample_3.png",
+        "size": 1196
+      },
+      {
+        "filename": "star_sample_2.png",
+        "path": "sample_images/star/star_sample_2.png",
+        "size": 1167
+      }
+    ],
+    "info_file": "sample_images/star/class_info.txt"
+  },
+  "comet": {
+    "description": "Comets - icy bodies with tails, originating from outer solar system",
+    "images": [
+      {
+        "filename": "comet_sample_1.png",
+        "path": "sample_images/comet/comet_sample_1.png",
+        "size": 1389
+      },
+      {
+        "filename": "comet_sample_2.png",
+        "path": "sample_images/comet/comet_sample_2.png",
+        "size": 1391
+      },
+      {
+        "filename": "comet_sample_3.png",
+        "path": "sample_images/comet/comet_sample_3.png",
+        "size": 2134
+      }
+    ],
+    "info_file": "sample_images/comet/class_info.txt"
+  },
+  "unknown": {
+    "description": "Unknown objects - unidentified astronomical phenomena",
+    "images": [
+      {
+        "filename": "unknown_sample_3.png",
+        "path": "sample_images/unknown/unknown_sample_3.png",
+        "size": 2199
+      },
+      {
+        "filename": "unknown_sample_2.png",
+        "path": "sample_images/unknown/unknown_sample_2.png",
+        "size": 2060
+      },
+      {
+        "filename": "unknown_sample_1.png",
+        "path": "sample_images/unknown/unknown_sample_1.png",
+        "size": 4333
+      }
+    ],
+    "info_file": "sample_images/unknown/class_info.txt"
+  },
+  "pulsar": {
+    "description": "Pulsars - rotating neutron stars emitting regular pulses of radiation",
+    "images": [
+      {
+        "filename": "pulsar_sample_3.png",
+        "path": "sample_images/pulsar/pulsar_sample_3.png",
+        "size": 1186
+      },
+      {
+        "filename": "pulsar_sample_2.png",
+        "path": "sample_images/pulsar/pulsar_sample_2.png",
+        "size": 1186
+      },
+      {
+        "filename": "pulsar_sample_1.png",
+        "path": "sample_images/pulsar/pulsar_sample_1.png",
+        "size": 1186
+      }
+    ],
+    "info_file": "sample_images/pulsar/class_info.txt"
+  },
+  "black": {
+    "description": "Unknown class",
+    "images": [
+      {
+        "filename": "black_sample_2.png",
+        "path": "sample_images/black/black_sample_2.png",
+        "size": 1299
+      },
+      {
+        "filename": "black_sample_3.png",
+        "path": "sample_images/black/black_sample_3.png",
+        "size": 1299
+      },
+      {
+        "filename": "black_sample_1.png",
+        "path": "sample_images/black/black_sample_1.png",
+        "size": 1299
+      }
+    ],
+    "info_file": "sample_images/black/class_info.txt"
+  }
+}

@@ -1,0 +1,9 @@
+Class: nebula
+Description: Nebulae - clouds of gas and dust in space, often stellar nurseries
+Number of sample images: 3
+Total images in test dataset: 20
+
+Sample images:
+- nebula_sample_1.png
+- nebula_sample_2.png
+- nebula_sample_3.png
