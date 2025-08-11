@@ -587,6 +587,75 @@ class AstronomicalClassificationSystem:
         report.append("\n" + "=" * 60)
         
         return "\n".join(report)
+    
+    def classify_image(self, image_path: str) -> List[Dict]:
+        """Classify a single image and return results."""
+        try:
+            # Load and preprocess the image
+            if not os.path.exists(image_path):
+                logger.error(f"Image not found: {image_path}")
+                return []
+            
+            # Load image using OpenCV
+            img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+            if img is None:
+                logger.error(f"Failed to load image: {image_path}")
+                return []
+            
+            # Resize to standard size
+            img = cv2.resize(img, (512, 512))
+            img = img / 255.0  # Normalize to [0, 1]
+            
+            # Add batch and channel dimensions
+            img = np.expand_dims(img, axis=(0, 3))  # (1, H, W, 1)
+            
+            # Convert to tensor and move to device
+            img_tensor = torch.tensor(img, dtype=torch.float32).permute(0, 3, 1, 2)  # (1, 1, H, W)
+            img_tensor = img_tensor.to(self.device)
+            
+            # Run classification
+            self.classifier.eval()
+            with torch.no_grad():
+                outputs = self.classifier(img_tensor)
+                probabilities = F.softmax(outputs, dim=1)
+                confidence, predicted = torch.max(probabilities, 1)
+            
+            # Format results
+            results = []
+            for i in range(len(predicted)):
+                class_idx = predicted[i].item()
+                confidence_score = confidence[i].item()
+                
+                result = {
+                    'type': 'classification',
+                    'class_name': self.class_names[class_idx] if class_idx < len(self.class_names) else 'Unknown',
+                    'confidence': confidence_score,
+                    'class_index': class_idx,
+                    'description': self._get_class_description(class_idx)
+                }
+                results.append(result)
+            
+            return results
+            
+        except Exception as e:
+            logger.error(f"Error classifying image {image_path}: {e}")
+            return []
+    
+    def _get_class_description(self, class_idx: int) -> str:
+        """Get description for a class index."""
+        descriptions = {
+            0: "Asteroid - Small rocky object orbiting the Sun",
+            1: "Black Hole - Region of spacetime with intense gravitational pull",
+            2: "Comet - Icy object that releases gas when near the Sun",
+            3: "Galaxy - Large system of stars, gas, and dust held together by gravity",
+            4: "Nebula - Cloud of gas and dust in space",
+            5: "Planet - Large object orbiting a star",
+            6: "Pulsar - Highly magnetized rotating neutron star",
+            7: "Quasar - Extremely luminous active galactic nucleus",
+            8: "Star - Luminous sphere of plasma held together by gravity",
+            9: "Unknown - Unidentified astronomical object"
+        }
+        return descriptions.get(class_idx, "Unknown astronomical object")
 
 def main():
     """Main function to demonstrate the astronomical classifier."""

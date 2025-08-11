@@ -643,6 +643,51 @@ class MultiObjectDetector:
         
         logger.info(f"Multi-object results exported to {results_path}")
         return results_path
+    
+    def detect_objects(self, image_path: str) -> List[Dict]:
+        """Detect objects in an image file and return results."""
+        try:
+            # Load image
+            if not os.path.exists(image_path):
+                logger.error(f"Image not found: {image_path}")
+                return []
+            
+            # Load image using OpenCV
+            img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+            if img is None:
+                logger.error(f"Failed to load image: {image_path}")
+                return []
+            
+            # Normalize to [0, 1]
+            img = img.astype(np.float32) / 255.0
+            
+            # Detect objects
+            objects = self.detect_objects_in_image(img)
+            
+            # Classify objects
+            classified_objects = self.classify_detected_objects(img, objects)
+            
+            # Format results for web interface
+            results = []
+            for obj in classified_objects:
+                bbox = obj['bbox']
+                result = {
+                    'type': 'object',
+                    'x': bbox[0],
+                    'y': bbox[1],
+                    'width': bbox[2] - bbox[0],
+                    'height': bbox[3] - bbox[1],
+                    'confidence': obj['confidence'],
+                    'classification': obj.get('classification', 'Unknown'),
+                    'object_id': obj.get('object_id', 0)
+                }
+                results.append(result)
+            
+            return results
+            
+        except Exception as e:
+            logger.error(f"Error detecting objects in {image_path}: {e}")
+            return []
 
 def main():
     """Demo function for multi-object detection."""
