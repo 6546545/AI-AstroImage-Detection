@@ -42,12 +42,13 @@ def main():
     print("3. Run object classification")
     print("4. Run combined analysis")
     print("5. Train models")
-    print("6. Show help")
+    print("6. Multi-object detection")
+    print("7. Show help")
     print("0. Exit")
     
     while True:
         try:
-            choice = input("\nSelect operation (0-6): ").strip()
+            choice = input("\nSelect operation (0-7): ").strip()
             
             if choice == "0":
                 print("👋 Goodbye!")
@@ -88,6 +89,13 @@ def main():
                     "--epochs", epochs
                 ])
             elif choice == "6":
+                print("\n🔍 Running multi-object detection...")
+                subprocess.run([
+                    sys.executable, "space_analyzer.py", "multi-detect",
+                    "--input-dir", "test_dataset/images/",
+                    "--output-dir", "multi_object_results/"
+                ])
+            elif choice == "7":
                 print("\n📖 Help:")
                 subprocess.run([sys.executable, "space_analyzer.py", "--help"])
             else:

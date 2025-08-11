@@ -59,6 +59,11 @@ python space_analyzer.py classify --input-dir test_dataset/images/ --output-dir 
 python space_analyzer.py analyze --input-dir test_dataset/images/ --epochs 20
 ```
 
+#### Multi-Object Detection
+```bash
+python space_analyzer.py multi-detect --input-dir test_dataset/images/ --output-dir results/
+```
+
 #### Train Models
 ```bash
 python space_analyzer.py train --input-dir test_dataset/images/ --model both --epochs 50
@@ -74,6 +79,7 @@ The system provides a comprehensive command-line interface through `space_analyz
 - **`detect`**: Run anomaly detection on images
 - **`classify`**: Run astronomical object classification
 - **`analyze`**: Run combined anomaly detection and classification
+- **`multi-detect`**: Detect and classify multiple objects in single images
 - **`train`**: Train anomaly detector and/or classifier models
 
 ### Common Options
@@ -100,9 +106,11 @@ python space_analyzer.py classify --input-dir images/ --output-dir results/ --th
 # Run complete analysis
 python space_analyzer.py analyze --input-dir images/ --output-dir results/ --epochs 50
 
+# Multi-object detection with custom threshold
+python space_analyzer.py multi-detect --input-dir images/ --output-dir results/ --threshold 0.8
+
 # Train only the anomaly detector
 python space_analyzer.py train --input-dir images/ --model anomaly --epochs 75
-```
 
 ## 🏗️ System Architecture
 
@@ -123,7 +131,12 @@ python space_analyzer.py train --input-dir images/ --model anomaly --epochs 75
    - Unified analysis pipeline
    - Comprehensive reporting
 
-4. **Command-Line Interface** (`space_analyzer.py`)
+4. **Multi-Object Detector** (`multi_object_detector.py`)
+   - Detect multiple objects in single images
+   - Bounding box localization
+   - Integration with existing classifier
+
+5. **Command-Line Interface** (`space_analyzer.py`)
    - User-friendly CLI for all operations
    - Progress tracking and logging
    - Error handling and validation
@@ -151,6 +164,12 @@ Input Images → Preprocessing → Model Inference → Results → Export
 - **Cross-referenced data**: Objects that are both anomalous and classified
 - **Export directories**: Organized results by analysis type
 
+### Multi-Object Detection
+- **Bounding boxes**: Precise object localization
+- **Multiple classifications**: Each detected object classified separately
+- **Visualization**: Annotated images with labels and confidence scores
+- **Detection methods**: Contour, peak, blob, and deep learning approaches
+
 ## 🔧 Configuration
 
 The system uses `config.py` for centralized configuration:
@@ -168,6 +187,7 @@ space-anomaly-detector/
 ├── space_anomaly_detector.py  # Anomaly detection system
 ├── astronomical_classifier.py  # Object classification system
 ├── enhanced_space_system.py   # Combined analysis system
+├── multi_object_detector.py   # Multi-object detection system
 ├── config.py                  # Configuration settings
 ├── requirements.txt           # Python dependencies
 ├── README.md                 # This file
@@ -175,6 +195,7 @@ space-anomaly-detector/
 │   └── images/              # Sample images
 ├── models/                   # Trained models
 ├── results/                  # Output directory
+├── multi_object_results/     # Multi-object detection results
 ├── enhanced_analysis_export/ # Combined analysis results
 ├── anomalies_export/         # Anomaly detection results
 ├── classification_export/    # Classification results

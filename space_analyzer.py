@@ -18,6 +18,8 @@ import argparse
 import logging
 from pathlib import Path
 import matplotlib
+from tqdm import tqdm
+import numpy as np
 matplotlib.use('Agg')  # Use non-interactive backend
 
 # Set environment variables for macOS
@@ -229,6 +231,83 @@ def test_system(args):
     print("✅ System test passed")
     return True
 
+def multi_object_detection(args):
+    """Run multi-object detection and classification on images."""
+    from multi_object_detector import MultiObjectDetector
+    import cv2
+    
+    print("🔍 Running Multi-Object Detection and Classification...")
+    
+    # Create detector
+    detector = MultiObjectDetector(device=args.device)
+    
+    # Load images (including from subdirectories)
+    image_files = []
+    for ext in ['*.jpg', '*.jpeg', '*.png', '*.tiff', '*.bmp']:
+        # Search in main directory
+        image_files.extend(Path(args.input_dir).glob(ext))
+        image_files.extend(Path(args.input_dir).glob(ext.upper()))
+        
+        # Search in subdirectories
+        for subdir in Path(args.input_dir).iterdir():
+            if subdir.is_dir():
+                image_files.extend(subdir.glob(ext))
+                image_files.extend(subdir.glob(ext.upper()))
+    
+    if not image_files:
+        print("❌ No images found in input directory")
+        return False
+    
+    print(f"📊 Found {len(image_files)} images")
+    
+    all_results = []
+    
+    for image_file in tqdm(image_files, desc="Processing images"):
+        # Load image
+        image = cv2.imread(str(image_file), cv2.IMREAD_GRAYSCALE)
+        if image is None:
+            continue
+        
+        # Normalize image
+        image = image.astype(np.float32) / 255.0
+        
+        # Detect objects
+        objects = detector.detect_objects_in_image(image, args.threshold)
+        
+        # Classify objects
+        classified_objects = detector.classify_detected_objects(image, objects)
+        
+        # Export results for this image
+        if args.output_dir:
+            detector.export_multi_object_results(
+                image, classified_objects, image_file.name, args.output_dir
+            )
+        
+        all_results.append({
+            'filename': image_file.name,
+            'objects': classified_objects
+        })
+    
+    # Print summary
+    total_objects = sum(len(result['objects']) for result in all_results)
+    print(f"\n📈 Multi-Object Detection Summary:")
+    print(f"   Images processed: {len(all_results)}")
+    print(f"   Total objects detected: {total_objects}")
+    print(f"   Average objects per image: {total_objects/len(all_results):.1f}")
+    
+    # Count classifications
+    class_counts = {}
+    for result in all_results:
+        for obj in result['objects']:
+            classification = obj.get('classification', 'unknown')
+            class_counts[classification] = class_counts.get(classification, 0) + 1
+    
+    print(f"   Object classifications:")
+    for class_name, count in class_counts.items():
+        print(f"     {class_name}: {count}")
+    
+    return True
+
 def main():
     """Main command-line interface."""
     parser = argparse.ArgumentParser(
@@ -295,6 +374,13 @@ Examples:
     # Testing
     test_parser = subparsers.add_parser('test', help='Test the system')
     
+    # Multi-object detection
+    multi_parser = subparsers.add_parser('multi-detect', help='Multi-object detection and classification')
+    multi_parser.add_argument('--input-dir', required=True, help='Input directory with images')
+    multi_parser.add_argument('--output-dir', default='multi_object_results', help='Output directory for results')
+    multi_parser.add_argument('--threshold', type=float, default=0.7, help='Detection confidence threshold')
+    multi_parser.add_argument('--device', default='auto', help='Device to use (cpu/cuda/auto)')
+    
     args = parser.parse_args()
     
     # Setup logging
@@ -315,6 +401,8 @@ Examples:
             success = train_models(args)
         elif args.command == 'test':
             success = test_system(args)
+        elif args.command == 'multi-detect':
+            success = multi_object_detection(args)
         else:
             print(f"Unknown command: {args.command}")
             return
