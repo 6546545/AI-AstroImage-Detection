@@ -130,4 +130,8 @@ preprocessed_data/
 *.jpg
 *.jpeg
 test_results_visualization.png
-anomaly_visualization_*.png 
+anomaly_visualization_*.png
+
+# Monetization and business documents
+MONETIZATION_PLAN.md
+QUICK_START_MONETIZATION.md 
