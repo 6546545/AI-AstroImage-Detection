@@ -183,23 +183,47 @@ The system uses `config.py` for centralized configuration:
 
 ```
 space-anomaly-detector/
-├── space_analyzer.py          # Main CLI interface
-├── space_anomaly_detector.py  # Anomaly detection system
-├── astronomical_classifier.py  # Object classification system
-├── enhanced_space_system.py   # Combined analysis system
-├── multi_object_detector.py   # Multi-object detection system
-├── config.py                  # Configuration settings
-├── requirements.txt           # Python dependencies
-├── README.md                 # This file
-├── test_dataset/             # Test data
-│   └── images/              # Sample images
-├── models/                   # Trained models
-├── results/                  # Output directory
-├── multi_object_results/     # Multi-object detection results
-├── enhanced_analysis_export/ # Combined analysis results
-├── anomalies_export/         # Anomaly detection results
-├── classification_export/    # Classification results
-└── preprocessed_data/        # Preprocessed datasets
+├── space_analyzer.py              # Main CLI interface
+├── start_analysis.py              # Interactive menu system
+├── space_anomaly_detector.py      # Anomaly detection system
+├── astronomical_classifier.py     # Object classification system
+├── enhanced_space_system.py       # Combined analysis system
+├── multi_object_detector.py       # Multi-object detection system
+├── config.py                      # Configuration settings
+├── requirements.txt               # Python dependencies
+├── README.md                      # Main documentation
+├── PRODUCTION_STATUS.md           # Production readiness status
+├── PRODUCTION_README.md           # Production overview
+├── MONETIZATION_PLAN.md           # Business strategy document
+├── QUICK_START_MONETIZATION.md    # Immediate action guide
+├── .gitignore                     # Git ignore rules
+├── test_dataset/                  # Test data
+│   ├── images/                    # Sample test images
+│   └── metadata/                  # Dataset metadata
+├── sample_images/                 # Sample images by class
+│   ├── star/                      # Star images
+│   ├── galaxy/                    # Galaxy images
+│   ├── nebula/                    # Nebula images
+│   ├── planet/                    # Planet images
+│   ├── asteroid/                  # Asteroid images
+│   ├── comet/                     # Comet images
+│   ├── quasar/                    # Quasar images
+│   ├── pulsar/                    # Pulsar images
+│   ├── black/                     # Black hole images
+│   ├── unknown/                   # Unknown object images
+│   ├── image_catalog.json         # Image metadata catalog
+│   └── SAMPLE_IMAGES_SUMMARY.txt  # Sample images summary
+├── models/                        # Trained models
+│   ├── astronomical_classifier.pth # Trained classifier model
+│   └── anomaly_detector.pth       # Trained anomaly detector
+├── nasa_images/                   # NASA image collection
+├── sdss_images/                   # SDSS image collection
+├── .venv/                         # Virtual environment
+├── .cursor/                       # Cursor IDE settings
+├── autoencoder.ipynb              # Autoencoder development notebook
+├── download_dataset_ssds.ipynb    # SDSS dataset download notebook
+├── preprocessing.ipynb            # Data preprocessing notebook
+└── sdss_image.jpg                 # Sample SDSS image
 ```
 
 ## 🧪 Testing
