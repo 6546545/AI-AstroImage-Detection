@@ -136,37 +136,4 @@ anomaly_visualization_*.png
 MONETIZATION_PLAN.md
 QUICK_START_MONETIZATION.md
 
-# Website and web interface files
-landing_page/
-WEB_IMPLEMENTATION_SUMMARY.md
-*.html
-*.css
-*.js
-*.ico
-*.svg
-*.woff
-*.woff2
-*.ttf
-*.eot
-
-# Web assets and uploads
-uploads/
-results/
-assets/
-static/
-templates/
-
-# Web server files
-app.py
-start_web.py
-test_web.py
-requirements_web.txt
-README_WEB.md
-
-# Web development
-node_modules/
-package.json
-package-lock.json
-yarn.lock
-webpack.config.js
-gulpfile.js 
+## (Removed web-specific ignores to revert to pre-website state)
