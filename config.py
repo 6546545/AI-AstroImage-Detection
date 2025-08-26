@@ -18,7 +18,12 @@ MODEL_CONFIG = {
     'learning_rate': 1e-3,
     'batch_size': 32,
     'epochs': 50,
-    'model_save_path': 'models/anomaly_detector.pth'
+    'model_save_path': 'models/anomaly_detector.pth',
+    'binary_mode': True,  # Set to True for binary classification (stars vs galaxies)
+    'classes': {
+        'binary': ['star', 'galaxy'],
+        'full': ['star', 'galaxy', 'nebula', 'planet', 'asteroid', 'comet', 'quasar', 'pulsar', 'black_hole']
+    }
 }
 
 # Anomaly Detection Configuration

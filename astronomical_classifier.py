@@ -111,7 +111,7 @@ class AstronomicalClassificationSystem:
         else:
             self.device = torch.device(device)
         
-        # Known astronomical object classes
+        # Known astronomical object classes (no 'unknown')
         self.known_classes = {
             0: "star",
             1: "galaxy", 
@@ -121,10 +121,8 @@ class AstronomicalClassificationSystem:
             5: "comet",
             6: "quasar",
             7: "pulsar",
-            8: "black_hole",
-            9: "unknown"
+            8: "black_hole"
         }
-        
         self.num_classes = len(self.known_classes)
         self.classifier = None
         self.class_names = list(self.known_classes.values())
@@ -263,7 +261,7 @@ class AstronomicalClassificationSystem:
     def create_classifier(self):
         """Create and initialize the classifier model."""
         self.classifier = AstronomicalObjectClassifier(
-            num_classes=self.num_classes,
+            num_classes=len(self.class_names),
             input_channels=1
         ).to(self.device)
         logger.info("Classifier model created and initialized")
@@ -459,18 +457,15 @@ class AstronomicalClassificationSystem:
         # Create classifier if not exists
         if self.classifier is None:
             self.classifier = AstronomicalObjectClassifier(
-                num_classes=checkpoint['num_classes'],
+                num_classes=len(checkpoint['class_names']),
                 input_channels=1
             ).to(self.device)
-        
         # Load state dict
         self.classifier.load_state_dict(checkpoint['model_state_dict'])
         self.classifier.eval()
-        
         # Update class names
         self.class_names = checkpoint['class_names']
-        self.num_classes = checkpoint['num_classes']
-        
+        self.num_classes = len(self.class_names)
         logger.info(f"Classifier loaded from {model_path}")
         logger.info(f"Classes: {self.class_names}")
     
@@ -644,16 +639,15 @@ class AstronomicalClassificationSystem:
     def _get_class_description(self, class_idx: int) -> str:
         """Get description for a class index."""
         descriptions = {
-            0: "Asteroid - Small rocky object orbiting the Sun",
-            1: "Black Hole - Region of spacetime with intense gravitational pull",
-            2: "Comet - Icy object that releases gas when near the Sun",
-            3: "Galaxy - Large system of stars, gas, and dust held together by gravity",
-            4: "Nebula - Cloud of gas and dust in space",
-            5: "Planet - Large object orbiting a star",
-            6: "Pulsar - Highly magnetized rotating neutron star",
-            7: "Quasar - Extremely luminous active galactic nucleus",
-            8: "Star - Luminous sphere of plasma held together by gravity",
-            9: "Unknown - Unidentified astronomical object"
+            0: "Star - Luminous sphere of plasma held together by gravity",
+            1: "Galaxy - Large system of stars, gas, and dust held together by gravity",
+            2: "Nebula - Cloud of gas and dust in space",
+            3: "Planet - Large object orbiting a star",
+            4: "Asteroid - Small rocky object orbiting the Sun",
+            5: "Comet - Icy object that releases gas when near the Sun",
+            6: "Quasar - Extremely luminous active galactic nucleus",
+            7: "Pulsar - Highly magnetized rotating neutron star",
+            8: "Black Hole - Region of spacetime with intense gravitational pull"
         }
         return descriptions.get(class_idx, "Unknown astronomical object")
 

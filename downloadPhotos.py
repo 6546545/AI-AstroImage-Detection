@@ -5,15 +5,23 @@ from io import BytesIO
 from tqdm import tqdm
 
 # Configuration
-DOWNLOAD_DIR = "sdss_images"
+DOWNLOAD_DIR = "ai_dataset/sdss_raw/stars"
 NUM_IMAGES = 5000
 WIDTH = 512
 HEIGHT = 512
 SCALE = 0.396  # arcsec/pixel
+
+# SQL query to fetch RA and Dec of galaxies from SDSS
+# Reference: https://skyserver.sdss.org/dr16/en/help/docs/realquery.aspx
+#PhotoObj table: https://skyserver.sdss.org/dr16/en/help/browser/browser.aspx?table=PhotoObj
+#Clean = 1 filters out objects with known issues
+#Stars: type = 6
+#Galaxies: type = 3
+#Quasars: type = 4
 SDSS_SQL = f"""
 SELECT TOP {NUM_IMAGES} ra, dec
 FROM PhotoObj
-WHERE type = 3 -- 3 = galaxy, 6 = star
+WHERE type = 6 -- 6 = Stars, 
 AND clean = 1
 """
 

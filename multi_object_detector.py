@@ -127,7 +127,7 @@ class MultiObjectDetector:
         self.detection_model = None
         self.class_names = [
             'star', 'galaxy', 'nebula', 'planet', 'asteroid', 
-            'comet', 'quasar', 'pulsar', 'black_hole', 'unknown'
+            'comet', 'quasar', 'pulsar', 'black_hole'
         ]
         self.num_classes = len(self.class_names)
         
@@ -465,14 +465,21 @@ class MultiObjectDetector:
             
             # Classify using the existing classifier
             results = classifier.classify_objects(object_region, confidence_threshold=0.5)
-            
             if results['predictions']:
                 pred = results['predictions'][0]
-                return {
-                    'classification': pred['classification'],
-                    'confidence': pred['confidence'],
-                    'probabilities': dict(zip(classifier.class_names, pred['probabilities']))
-                }
+                # Assign 'unknown' only if below threshold
+                if pred['confidence'] >= 0.5:
+                    return {
+                        'classification': pred['classification'],
+                        'confidence': pred['confidence'],
+                        'probabilities': dict(zip(classifier.class_names, pred['probabilities']))
+                    }
+                else:
+                    return {
+                        'classification': 'unknown',
+                        'confidence': pred['confidence'],
+                        'probabilities': dict(zip(classifier.class_names, pred['probabilities']))
+                    }
         
         except Exception as e:
             logger.warning(f"Classification failed: {e}")

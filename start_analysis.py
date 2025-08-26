@@ -27,7 +27,7 @@ def main():
         print("   Consider activating: source .venv/bin/activate")
     
     # Check if test data exists
-    test_data_path = Path("test_dataset/images")
+    test_data_path = Path("clean_dataset/processed_dataset/test")
     if not test_data_path.exists():
         print("❌ Test dataset not found")
         print("   Expected: test_dataset/images/")
@@ -60,14 +60,14 @@ def main():
                 print("\n🔍 Running anomaly detection...")
                 subprocess.run([
                     sys.executable, "space_analyzer.py", "detect",
-                    "--input-dir", "test_dataset/images/",
+                    "--input-dir", "clean_dataset/processed_dataset/test",
                     "--output-dir", "results/"
                 ])
             elif choice == "3":
                 print("\n🌌 Running object classification...")
                 subprocess.run([
                     sys.executable, "space_analyzer.py", "classify",
-                    "--input-dir", "test_dataset/images/",
+                    "--input-dir", "clean_dataset/processed_dataset/test",
                     "--output-dir", "results/"
                 ])
             elif choice == "4":
@@ -75,16 +75,16 @@ def main():
                 print(f"\n🚀 Running combined analysis with {epochs} epochs...")
                 subprocess.run([
                     sys.executable, "space_analyzer.py", "analyze",
-                    "--input-dir", "test_dataset/images/",
+                    "--input-dir", "clean_dataset/processed_dataset/test",
                     "--epochs", epochs
                 ])
             elif choice == "5":
                 model = input("Enter model to train (anomaly/classifier/both, default: both): ").strip() or "both"
                 epochs = input("Enter training epochs (default: 50): ").strip() or "50"
-                print(f"\n🏋️  Training {model} model with {epochs} epochs...")
+                print(f"\n🏋️  Training {model} model(s) on train dataset for {epochs} epochs...")
                 subprocess.run([
                     sys.executable, "space_analyzer.py", "train",
-                    "--input-dir", "test_dataset/images/",
+                    "--input-dir", "clean_dataset/processed_dataset/train",
                     "--model", model,
                     "--epochs", epochs
                 ])
@@ -92,7 +92,7 @@ def main():
                 print("\n🔍 Running multi-object detection...")
                 subprocess.run([
                     sys.executable, "space_analyzer.py", "multi-detect",
-                    "--input-dir", "test_dataset/images/",
+                    "--input-dir", "clean_dataset/processed_dataset/test",
                     "--output-dir", "multi_object_results/"
                 ])
             elif choice == "7":

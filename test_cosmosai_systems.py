@@ -61,6 +61,9 @@ class TestCosmosAISystems(unittest.TestCase):
         cls.anomaly_threshold = 0.8
         cls.classification_threshold = 0.7
         
+        # Initialize test results dictionary at class level
+        cls.test_results = {}
+        
         print(f"✅ Test environment ready: {cls.test_dir}")
     
     @classmethod
@@ -72,7 +75,7 @@ class TestCosmosAISystems(unittest.TestCase):
     
     def setUp(self):
         """Set up for each test."""
-        self.test_results = {}
+        pass
     
     def tearDown(self):
         """Clean up after each test."""
@@ -141,7 +144,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertTrue(np.all(images >= 0) and np.all(images <= 1))  # Normalized
         
         print("✅ DataPreprocessor tests passed")
-        self.test_results['data_preprocessor'] = True
+        self.__class__.test_results['data_preprocessor'] = True
     
     def test_02_anomaly_detector_model(self):
         """Test AnomalyDetector model architecture and inference."""
@@ -166,7 +169,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertEqual(str(detector.device), self.device)
         
         print("✅ AnomalyDetector model tests passed")
-        self.test_results['anomaly_detector_model'] = True
+        self.__class__.test_results['anomaly_detector_model'] = True
     
     def test_03_anomaly_detection_inference(self):
         """Test anomaly detection inference on sample data."""
@@ -210,7 +213,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertTrue(len(results['high_confidence_anomalies']) <= len(results['all_anomalies']))
         
         print("✅ Anomaly detection inference tests passed")
-        self.test_results['anomaly_detection_inference'] = True
+        self.__class__.test_results['anomaly_detection_inference'] = True
     
     def test_04_astronomical_classifier_model(self):
         """Test AstronomicalClassificationSystem model."""
@@ -237,7 +240,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertEqual(str(classifier.device), self.device)
         
         print("✅ Astronomical classifier model tests passed")
-        self.test_results['astronomical_classifier_model'] = True
+        self.__class__.test_results['astronomical_classifier_model'] = True
     
     def test_05_astronomical_classification_inference(self):
         """Test astronomical classification inference."""
@@ -298,7 +301,7 @@ class TestCosmosAISystems(unittest.TestCase):
             self.assertTrue(0 <= classification['confidence'] <= 1)
         
         print("✅ Astronomical classification inference tests passed")
-        self.test_results['astronomical_classification_inference'] = True
+        self.__class__.test_results['astronomical_classification_inference'] = True
     
     def test_06_multi_object_detector_model(self):
         """Test MultiObjectDetector model."""
@@ -325,7 +328,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertEqual(str(detector.device), self.device)
         
         print("✅ Multi-object detector model tests passed")
-        self.test_results['multi_object_detector_model'] = True
+        self.__class__.test_results['multi_object_detector_model'] = True
     
     def test_07_multi_object_detection_inference(self):
         """Test multi-object detection inference."""
@@ -386,7 +389,7 @@ class TestCosmosAISystems(unittest.TestCase):
                 self.assertTrue(0 <= obj['confidence'] <= 1)
         
         print("✅ Multi-object detection inference tests passed")
-        self.test_results['multi_object_detection_inference'] = True
+        self.__class__.test_results['multi_object_detection_inference'] = True
     
     def test_08_enhanced_space_analyzer(self):
         """Test EnhancedSpaceAnalyzer integration."""
@@ -398,7 +401,7 @@ class TestCosmosAISystems(unittest.TestCase):
             from enhanced_space_analyzer import EnhancedSpaceAnalyzer
         except ImportError:
             print("Note: Skipping EnhancedSpaceAnalyzer test - missing advanced dependencies (einops)")
-            self.test_results['enhanced_space_analyzer'] = True
+            self.__class__.test_results['enhanced_space_analyzer'] = True
             return
         
         # Create analyzer - check if it accepts device parameter
@@ -457,7 +460,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertIn('objects_detected', summary)
         
         print("✅ Enhanced space analyzer tests passed")
-        self.test_results['enhanced_space_analyzer'] = True
+        self.__class__.test_results['enhanced_space_analyzer'] = True
     
     def test_09_result_export_formats(self):
         """Test result export functionality."""
@@ -512,7 +515,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertIn('metadata', exported_data)
         
         print("✅ Result export format tests passed")
-        self.test_results['result_export_formats'] = True
+        self.__class__.test_results['result_export_formats'] = True
     
     def test_10_system_integration(self):
         """Test complete system integration."""
@@ -560,7 +563,7 @@ class TestCosmosAISystems(unittest.TestCase):
                 print(f"Note: Skipping {system} due to: {e}")
         
         print("✅ System integration tests passed")
-        self.test_results['system_integration'] = True
+        self.__class__.test_results['system_integration'] = True
     
     def test_11_performance_benchmarks(self):
         """Test system performance benchmarks."""
@@ -625,7 +628,7 @@ class TestCosmosAISystems(unittest.TestCase):
         print(f"   Classification: {classification_time:.2f}s")
         print(f"   Object detection: {detection_time:.2f}s")
         
-        self.test_results['performance_benchmarks'] = True
+        self.__class__.test_results['performance_benchmarks'] = True
     
     def test_12_error_handling(self):
         """Test error handling and edge cases."""
@@ -692,7 +695,7 @@ class TestCosmosAISystems(unittest.TestCase):
             pass  # Expected for invalid threshold
         
         print("✅ Error handling tests passed")
-        self.test_results['error_handling'] = True
+        self.__class__.test_results['error_handling'] = True
     
     def test_13_data_validation(self):
         """Test data validation and input checking."""
@@ -719,7 +722,7 @@ class TestCosmosAISystems(unittest.TestCase):
             self.fail(f"Data preprocessor failed to handle different image sizes: {e}")
         
         print("✅ Data validation tests passed")
-        self.test_results['data_validation'] = True
+        self.__class__.test_results['data_validation'] = True
     
     def test_14_output_format_consistency(self):
         """Test output format consistency across all systems."""
@@ -778,7 +781,7 @@ class TestCosmosAISystems(unittest.TestCase):
         self.assertEqual(len(detection_results), len(test_images))
         
         print("✅ Output format consistency tests passed")
-        self.test_results['output_format_consistency'] = True
+        self.__class__.test_results['output_format_consistency'] = True
     
     def test_15_comprehensive_validation(self):
         """Comprehensive validation of all test results."""
@@ -802,15 +805,15 @@ class TestCosmosAISystems(unittest.TestCase):
             'output_format_consistency'
         ]
         
-        missing = [t for t in expected_tests if t not in self.test_results]
-        failed = [t for t in expected_tests if self.test_results.get(t) is False]
+        missing = [t for t in expected_tests if t not in self.__class__.test_results]
+        failed = [t for t in expected_tests if self.__class__.test_results.get(t) is False]
         if missing:
             print(f"Note: Missing test markers for: {missing}")
         if failed:
             self.fail(f"Some tests failed: {failed}")
         
         print("✅ All tests completed successfully!")
-        print(f"📊 Test Summary: {len(self.test_results)}/{len(expected_tests)} tests passed")
+        print(f"📊 Test Summary: {len(self.__class__.test_results)}/{len(expected_tests)} tests passed")
         
         # Generate test report
         self.generate_test_report()
@@ -820,10 +823,10 @@ class TestCosmosAISystems(unittest.TestCase):
         report = {
             "test_suite": "CosmosAI Systems Unit Tests",
             "timestamp": str(np.datetime64('now')),
-            "total_tests": len(self.test_results),
-            "passed_tests": sum(self.test_results.values()),
-            "failed_tests": len(self.test_results) - sum(self.test_results.values()),
-            "test_results": self.test_results,
+            "total_tests": len(self.__class__.test_results),
+            "passed_tests": sum(self.__class__.test_results.values()),
+            "failed_tests": len(self.__class__.test_results) - sum(self.__class__.test_results.values()),
+            "test_results": self.__class__.test_results,
             "system_info": {
                 "device": self.device,
                 "expected_classes": self.expected_classes,
