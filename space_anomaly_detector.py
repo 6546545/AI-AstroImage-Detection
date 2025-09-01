@@ -67,7 +67,7 @@ class DataPreprocessor:
         logger.info(f"Loading images from {folder}")
         
         # Check if folder contains subdirectories (class-based organization)
-        subdirs = [d for d in os.listdir(folder) 
+        subdirs = [d for d in os.listdir(folder)
                   if os.path.isdir(os.path.join(folder, d)) and not d.startswith('.')]
         
         if subdirs:
@@ -499,4 +499,4 @@ def main():
     print("="*50)
 
 if __name__ == "__main__":
-    main() 
+    main()

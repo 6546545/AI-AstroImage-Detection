@@ -1,0 +1,97 @@
+# Production Configuration for Space Anomaly Detection System
+# Version: 1.0.0
+
+# System Configuration
+system:
+  name: "Space Anomaly Detection & Classification System"
+  version: "1.0.0"
+  environment: "production"
+  debug: false
+  log_level: "INFO"
+
+# Model Configuration
+models:
+  classifier:
+    path: "models/astronomical_classifier.pth"
+    input_size: [512, 512]
+    num_classes: 10
+    confidence_threshold: 0.8
+    device: "auto"  # auto, cpu, cuda, mps
+  
+  anomaly_detector:
+    path: "models/anomaly_detector.pth"
+    input_size: [512, 512]
+    threshold: 0.15
+    device: "auto"
+
+# Processing Configuration
+processing:
+  batch_size: 8
+  num_workers: 4
+  max_memory_usage: 0.8  # 80% of available RAM
+  image_formats: ["jpg", "jpeg", "png", "tiff", "fits"]
+  supported_classes:
+    - "star"
+    - "galaxy"
+    - "nebula"
+    - "planet"
+    - "asteroid"
+    - "comet"
+    - "quasar"
+    - "pulsar"
+    - "black_hole"
+    - "unknown"
+
+# Output Configuration
+output:
+  results_dir: "results"
+  export_formats: ["json", "csv", "html"]
+  save_images: true
+  create_visualizations: true
+  compression_level: 6
+
+# Performance Configuration
+performance:
+  enable_gpu: true
+  enable_mps: true  # Apple Silicon
+  memory_efficient: true
+  cache_models: true
+  parallel_processing: true
+
+# Logging Configuration
+logging:
+  file: "logs/space_analyzer.log"
+  max_file_size: "100MB"
+  backup_count: 5
+  format: "json"
+  include_timestamp: true
+  log_metrics: true
+
+# Security Configuration
+security:
+  validate_input_files: true
+  max_file_size: "100MB"
+  allowed_extensions: ["jpg", "jpeg", "png", "tiff", "fits"]
+  sanitize_filenames: true
+
+# Monitoring Configuration
+monitoring:
+  enable_metrics: true
+  metrics_file: "logs/metrics.json"
+  performance_tracking: true
+  error_reporting: true
+
+# API Configuration (if needed)
+api:
+  enabled: false
+  host: "0.0.0.0"
+  port: 8000
+  max_requests: 100
+  timeout: 30
+
+# Database Configuration (if needed)
+database:
+  enabled: false
+  type: "sqlite"
+  path: "data/results.db"
+  backup_enabled: true

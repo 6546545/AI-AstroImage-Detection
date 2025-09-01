@@ -55,4 +55,4 @@ VALIDATION_CONFIG = {
     'validation_split': 0.1,
     'early_stopping_patience': 10,
     'min_delta': 1e-6
-} 
+}

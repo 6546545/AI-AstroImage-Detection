@@ -42,46 +42,46 @@ def anomaly_detection(args):
     from space_anomaly_detector import AnomalyDetector, DataPreprocessor
     
     print("🔍 Running Anomaly Detection...")
-    
+
     # Create detector
     detector = AnomalyDetector(device=args.device)
-    
+
     # Load and preprocess images
     preprocessor = DataPreprocessor(img_size=(512, 512), grayscale=True)
     images, filenames = preprocessor.load_and_preprocess_images(args.input_dir)
-    
+
     if len(images) == 0:
         print("❌ No images found in input directory")
         return False
-    
+
     print(f"📊 Loaded {len(images)} images")
-    
+
     # Train detector if needed
     if args.train:
         print("🏋️  Training anomaly detector...")
         detector.train(images, epochs=args.epochs)
         print("✅ Training completed")
-    
+
     # Detect anomalies
     print("🔍 Detecting anomalies...")
     results = detector.detect_anomalies(images, confidence_threshold=args.threshold)
-    
+
     # Export results
     if args.output_dir:
         print(f"📁 Exporting results to {args.output_dir}")
         detector.export_anomalies(images, results, filenames, args.output_dir)
-    
+
     # Print summary
     high_confidence_anomalies = results['high_confidence_anomalies']
     all_anomalies = results['all_anomalies']
-    print(f"\n📈 Detection Summary:")
+    print("\n📈 Detection Summary:")
     print(f"   Total images: {len(images)}")
     print(f"   High-confidence anomalies: {len(high_confidence_anomalies)}")
     print(f"   Total anomalies: {len(all_anomalies)}")
     print(f"   Anomaly rate: {len(all_anomalies)/len(images)*100:.1f}%")
     print(f"   Confidence threshold: {results['confidence_threshold']}")
     print(f"   Error threshold: {results['threshold']:.6f}")
-    
+
     return True
 
 def classification(args):
@@ -89,19 +89,19 @@ def classification(args):
     from astronomical_classifier import AstronomicalClassificationSystem
     
     print("🌌 Running Astronomical Classification...")
-    
+
     # Create classifier
     classifier = AstronomicalClassificationSystem(device=args.device)
-    
+
     # Load images
     images, filenames = classifier.load_images_from_directory(args.input_dir)
-    
+
     if len(images) == 0:
         print("❌ No images found in input directory")
         return False
-    
+
     print(f"📊 Loaded {len(images)} images")
-    
+
     # Train classifier if needed
     if args.train:
         print("🏋️  Training classifier...")
@@ -109,30 +109,30 @@ def classification(args):
         X_train, y_train = classifier.generate_training_data(images, filenames)
         classifier.train_classifier(X_train, y_train, epochs=args.epochs)
         print("✅ Training completed")
-    
+
     # Classify objects
     print("🔍 Classifying objects...")
     results = classifier.classify_objects(images, confidence_threshold=args.threshold)
-    
+
     # Export results
     if args.output_dir:
         print(f"📁 Exporting results to {args.output_dir}")
         classifier.export_classifications(images, results, filenames, args.output_dir)
-    
+
     # Print summary
     classifications = results['predictions']
-    print(f"\n📈 Classification Summary:")
+    print("\n📈 Classification Summary:")
     print(f"   Total objects: {len(classifications)}")
-    
+
     # Count classifications
     class_counts = {}
     for pred in classifications:
         class_name = pred['classification']
         class_counts[class_name] = class_counts.get(class_name, 0) + 1
-    
+
     for class_name, count in class_counts.items():
         print(f"   {class_name}: {count}")
-    
+
     return True
 
 def combined_analysis(args):
@@ -336,4 +336,4 @@ Examples:
         sys.exit(1)
 
 if __name__ == "__main__":
-    main() 
+    main()

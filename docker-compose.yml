@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  space-analyzer:
+    build: .
+    container_name: space-anomaly-detector
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount data directories for persistence
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./results:/app/results
+      - ./logs:/app/logs
+      - ./test_dataset:/app/test_dataset
+      - ./sample_images:/app/sample_images
+    environment:
+      - PYTHONPATH=/app
+      - KMP_DUPLICATE_LIB_OK=TRUE
+      - OMP_NUM_THREADS=1
+      - MKL_NUM_THREADS=1
+      - LOG_LEVEL=INFO
+    healthcheck:
+      test: ["CMD", "python", "space_analyzer.py", "test"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+    networks:
+      - space-network
+
+  # Optional: Add a monitoring service
+  monitoring:
+    image: grafana/grafana:latest
+    container_name: space-monitoring
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - space-network
+    depends_on:
+      - space-analyzer
+
+volumes:
+  grafana-storage:
+
+networks:
+  space-network:
+    driver: bridge

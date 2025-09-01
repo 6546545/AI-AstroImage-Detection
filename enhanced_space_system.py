@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 class EnhancedSpaceSystem:
     """Enhanced system combining anomaly detection and object classification."""
     
-    def __init__(self, data_dir: str = "sdss_images", 
+    def __init__(self, data_dir: str = "sdss_images",
                  anomaly_model_path: Optional[str] = None,
                  classifier_model_path: Optional[str] = None,
                  device: str = "auto"):
@@ -45,7 +45,7 @@ class EnhancedSpaceSystem:
         
         logger.info("Enhanced Space System initialized")
     
-    def run_complete_analysis(self, confidence_threshold: float = 0.7, 
+    def run_complete_analysis(self, confidence_threshold: float = 0.7,
                              train_epochs: int = 30) -> Dict:
         """Run complete analysis: anomaly detection + object classification."""
         logger.info("Starting complete space analysis...")
@@ -53,7 +53,7 @@ class EnhancedSpaceSystem:
         # Create overall progress bar
         steps = [
             "Data Preprocessing",
-            "Training Anomaly Detector", 
+            "Training Anomaly Detector",
             "Detecting Anomalies",
             "Classifying Objects",
             "Combining Results",
@@ -68,8 +68,8 @@ class EnhancedSpaceSystem:
         X_train, X_test, test_files = self.anomaly_system.preprocessor.prepare_dataset(self.data_dir)
         
         # Save preprocessed data
-        self.anomaly_system.preprocessor.save_dataset(X_train, X_test, 
-                                                     [f"train_{i}" for i in range(len(X_train))], 
+        self.anomaly_system.preprocessor.save_dataset(X_train, X_test,
+                                                     [f"train_{i}" for i in range(len(X_train))],
                                                      test_files)
         overall_pbar.update(1)
         
@@ -127,7 +127,7 @@ class EnhancedSpaceSystem:
         
         return final_results
     
-    def _combine_results(self, anomaly_results: Dict, classification_results: Dict, 
+    def _combine_results(self, anomaly_results: Dict, classification_results: Dict,
                         filenames: List[str]) -> Dict:
         """Combine anomaly detection and classification results."""
         
@@ -191,7 +191,7 @@ class EnhancedSpaceSystem:
         
         return combined_results
     
-    def _export_combined_results(self, X_test: np.ndarray, combined_results: Dict, 
+    def _export_combined_results(self, X_test: np.ndarray, combined_results: Dict,
                                 filenames: List[str]) -> List[str]:
         """Export combined analysis results."""
         output_dir = "enhanced_analysis_export"
@@ -371,4 +371,4 @@ def main():
     enhanced_system.save_analysis_report(results)
 
 if __name__ == "__main__":
-    main() 
+    main()

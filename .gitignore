@@ -130,4 +130,24 @@ preprocessed_data/
 *.jpg
 *.jpeg
 test_results_visualization.png
-anomaly_visualization_*.png 
+anomaly_visualization_*.png
+
+# Large data files
+data/raw/
+data/clean_dataset/
+*.fits
+*.fits.gz
+
+# Logs and temporary files
+logs/
+*.log
+results/
+enhanced_analysis_export/
+
+# Test data
+test_dataset/images/
+sample_images/
+
+# Temporary files
+*.tmp
+*.temp 

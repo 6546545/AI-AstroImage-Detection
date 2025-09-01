@@ -11,7 +11,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, TensorDataset
 import cv2
 import json
-from typing import List, Tuple, Dict, Optional, Union
+from typing import List, Tuple, Dict, Optional
 import logging
 from tqdm import tqdm
 import time
@@ -114,7 +114,7 @@ class AstronomicalClassificationSystem:
         # Known astronomical object classes
         self.known_classes = {
             0: "star",
-            1: "galaxy", 
+            1: "galaxy",
             2: "nebula",
             3: "planet",
             4: "asteroid",
@@ -143,16 +143,16 @@ class AstronomicalClassificationSystem:
         images = []
         filenames = []
         
-        # Check if directory contains subdirectories (class-based organization)
-        subdirs = [d for d in os.listdir(directory) 
+                # Check if directory contains subdirectories (class-based organization)
+        subdirs = [d for d in os.listdir(directory)
                   if os.path.isdir(os.path.join(directory, d)) and not d.startswith('.')]
-        
+
         if subdirs:
             # Load from subdirectories (class-based organization)
             logger.info(f"Found {len(subdirs)} subdirectories, loading from all classes")
             for subdir in subdirs:
                 subdir_path = os.path.join(directory, subdir)
-                image_files = [f for f in os.listdir(subdir_path) 
+                image_files = [f for f in os.listdir(subdir_path)
                               if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
                 
                 for file in image_files:
@@ -172,7 +172,7 @@ class AstronomicalClassificationSystem:
                     filenames.append(f"{subdir}/{file}")
         else:
             # Load from flat directory
-            image_files = [f for f in os.listdir(directory) 
+            image_files = [f for f in os.listdir(directory)
                           if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
             
             for file in image_files:
@@ -603,4 +603,4 @@ def main():
     print("=" * 50)
 
 if __name__ == "__main__":
-    main() 
+    main()
